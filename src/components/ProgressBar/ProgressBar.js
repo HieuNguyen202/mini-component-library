@@ -49,6 +49,9 @@ const Background = styled.div`
   border-radius:  ${({size}) => SIZE_TO_BORDER_RADIUS[size]}px;;
   padding: ${({size}) => SIZE_TO_PADDING[size]}px;
   height: ${({size}) => SIZE_TO_HEIGHT[size]}px;
+  aria-valuenow: ${({value}) => value};
+  role="progressbar"
+  aria-label="Progress bar"
 `
 
 export default ProgressBar;
